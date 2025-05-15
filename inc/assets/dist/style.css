@@ -4540,9 +4540,14 @@ p {
 }
 
 .announcement-bar {
-  background-color: var(--primary-white);
+  background-color: var(--main-orange);
   padding: 1.2rem 0;
 }
+
+.announcement-bar p{
+  color: white
+}
+
 .announcement-bar .announcement-content {
   display: flex;
   justify-content: space-between;
@@ -4571,6 +4576,9 @@ p {
   height: 18px;
   width: 18px;
   fill: var(--icon-color);
+}
+.announcement-bar .announcement-content .announcement-bar-links .social-link .icon{
+  fill:white
 }
 .announcement-bar .announcement-content .announcement-bar-links .social-link .icon:hover {
   fill: var(--main-orange);
