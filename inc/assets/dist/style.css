@@ -804,7 +804,7 @@ p {
 }
 .services-section .services-card-section {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 3rem;
   margin-top: 5.2rem;
 }
@@ -2792,6 +2792,7 @@ p {
   .question-block .question-btn {
     flex-direction: column;
     width: 100%;
+    align-items: center;
   }
 }
 .question-block .question-btn .btn {
@@ -4654,7 +4655,7 @@ header .hamburger {
 }
 @media (max-width: 991px) {
   header .hamburger {
-    display: block;
+    /* display: block; */
   }
 }
 
@@ -4990,7 +4991,7 @@ header .hamburger {
 }
 @media (max-width: 991px) {
   .desktop.navigation-menu {
-    display: none;
+    /* display: none; */
   }
 }
 
