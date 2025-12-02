@@ -818,7 +818,7 @@ p {
 }
 @media (max-width: 991px) {
   .services-section .services-card-section {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 @media (max-width: 767px) {
@@ -4662,6 +4662,8 @@ header.scrolled .navigation-menu a {
 header.scrolled .logo .show-sticky {
   opacity: 1;
   visibility: visible;
+  width: 150px;
+  margin-top: 15px;
 }
 header.scrolled .logo .hide-sticky {
   opacity: 0;
@@ -5196,4 +5198,9 @@ header .home-2-humburger .bar {
 }
 header.scrolled .hamburger-icon .bar {
   background-color: var(--primary-black);
+}
+.custom-center{
+  width: 80%;
+margin: 0 auto;
+text-align: center
 }
