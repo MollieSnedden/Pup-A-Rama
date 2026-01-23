@@ -1,434 +1,323 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pup-A-Rama</title>
-
-    <!-- Favicons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="inc/assets/images/apple-touch-icon.png" >
-    <link rel="icon" type="image/png" sizes="32x32" href="inc/assets/images/favicon-32x32.png" >
-    <link rel="icon" type="image/png" sizes="16x16" href="inc/assets/images/favicon-16x16.png" >
-
+    <link rel="apple-touch-icon" sizes="180x180" href="inc/assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="inc/assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="inc/assets/images/favicon-16x16.png">
     <!-- stylesheets - start -->
-    <link rel="stylesheet" href="inc/assets/dist/style.css" >
+    <link rel="stylesheet" href="inc/assets/dist/style.css">
     <!-- stylesheets - end -->
-
-    <!-- Swiper CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" >
-
-    <!-- Animate.css -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    >
-
-    <!-- WOW.js -->
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <!-- Load Animate.css from CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Load WOW.js from CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-
     <!-- deferred scripts - start -->
     <script src="inc/assets/dist/app.js" defer></script>
     <!-- deferred scripts - end -->
-  </head>
-
-  <body>
+</head>
+<body>
     <!-- Announcement Bar HTML -->
     <div class="announcement-bar">
-      <div class="container">
-        <div class="announcement-content">
-          <p>Be sure to check out our monthly deals!</p>
-          <ul class="announcement-bar-links">
-            <li>
-              <a
-                href="https://www.facebook.com/people/Pup-A-Rama-Playhouse-Grooming/100073531511491/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="social-link"
-                aria-label="Facebook"
-              >
-                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-hidden="true">
-                  <title>facebook</title>
-                  <path
-                    d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96A10 10 0 0 0 22 12.06C22 6.53 17.5 2.04 12 2.04Z"
-                  />
-                </svg>
-              </a>
-            </li>
-
-            <li>
-              <a
-                href="https://www.twitter.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="social-link"
-                aria-label="X (Twitter)"
-              >
-                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-hidden="true">
-                  <path
-                    d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"
-                  />
-                </svg>
-              </a>
-            </li>
-
-            <li><!-- Pinterest intentionally disabled --></li>
-            <li><!-- Instagram intentionally disabled --></li>
-          </ul>
+        <div class="container">
+            <div class="announcement-content">
+                <p>Be sure to check out our monthly deals!</p>
+                <ul class="announcement-bar-links">
+                    <li>
+                        <a href="https://www.facebook.com/people/Pup-A-Rama-Playhouse-Grooming/100073531511491/" target="_blank" class="social-link"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <title>facebook</title>
+                                <path d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96A10 10 0 0 0 22 12.06C22 6.53 17.5 2.04 12 2.04Z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.twitter.com" target="_blank" class="social-link">
+                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
     </div>
-
     <!-- Header-start -->
     <header class="header sticky-nav">
-      <div class="container">
-        <div class="header-wrapper">
-          <a href="index.html" class="logo">
-            <img class="hide-sticky" src="inc/assets/images/Pup-A-Rama-Logo4.png" alt="Pup-A-Rama" >
-            <img class="show-sticky" src="inc/assets/images/Pup-A-Rama-Logo4.png" alt="Pup-A-Rama" >
-          </a>
-
-          <div class="header-inner-wrapper">
-            <div class="navigation-menu-wrapper menu-b538310 desktop-wrapper">
-              <ul id="menu-main-menu" class="navigation-menu desktop">
-                <li class="menu-item menu-item-has-children">
-                  <a href="#about">About Us</a>
-                </li>
-                <li class="menu-item">
-                  <a href="#contact"> Contact </a>
-                </li>
-              </ul>
-            </div>
-
-            <div class="hamburger direction-left">
-              <div class="hamburger-wrapper">
-                <div class="hamburger-icon">
-                  <div class="bars">
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                  </div>
-                </div>
-
-                <div class="hamburger-content">
-                  <div class="hamburger-content-header">
-                    <a href="index.html" class="logo">
-                      <img src="inc/assets/images/logo-light.png" alt="pawfy" >
-                    </a>
-                    <div class="hamburger-close" role="button" tabindex="0" aria-label="Close menu">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
-                        <title>window-close</title>
-                        <path
-                          d="M13.46,12L19,17.54V19H17.54L12,13.46L6.46,19H5V17.54L10.54,12L5,6.46V5H6.46L12,10.54L17.54,5H19V6.46L13.46,12Z"
-                        />
-                      </svg>
+        <div class="container">
+            <div class="header-wrapper">
+                <a href="index.html" class="logo">
+                    <img class="hide-sticky" src="inc/assets/images/Pup-A-Rama-Logo4.png" alt="Pup-A-Rama">
+                    <img class="show-sticky" src="inc/assets/images/Pup-A-Rama-Logo4.png" alt="Pup-A-Rama">
+                </a>
+                <div class="header-inner-wrapper">
+                    <div class="navigation-menu-wrapper menu-b538310 desktop-wrapper">
+                        <ul id="menu-main-menu" class="navigation-menu desktop">
+                            <li class="menu-item menu-item-has-children">
+                                <a href="#about">About Us</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#contact">Contact</a>
+                            </li>
+                        </ul>
                     </div>
-                  </div>
-
-                  <div class="navigation-menu-wrapper">
-                    <ul class="navigation-menu mobile">
-                      <li class="menu-item">
-                        <a href="index.html">Home</a>
-                      </li>
-                      <li class="menu-item">
-                        <a href="#about">About</a>
-                      </li>
-                      <li class="menu-item">
-                        <a href="#contact">Contact</a>
-                      </li>
-                    </ul>
-                  </div>
+                    <div class="hamburger direction-left">
+                        <div class="hamburger-wrapper">
+                            <div class="hamburger-icon">
+                                <div class="bars">
+                                    <div class="bar"></div>
+                                    <div class="bar"></div>
+                                    <div class="bar"></div>
+                                </div>
+                            </div>
+                            <div class="hamburger-content">
+                                <div class="hamburger-content-header">
+                                    <a href="index.html" class="logo">
+                                        <img src="inc/assets/images/logo-light.png" alt="pawfy">
+                                    </a>
+                                    <div class="hamburger-close">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <title>window-close</title>
+                                            <path d="M13.46,12L19,17.54V19H17.54L12,13.46L6.46,19H5V17.54L10.54,12L5,6.46V5H6.46L12,10.54L17.54,5H19V6.46L13.46,12Z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="navigation-menu-wrapper">
+                                    <ul class="navigation-menu mobile">
+                                        <li class="menu-item menu-item-has-children">
+                                            <a href="index.html">
+                                                Home
+                                                <div class="icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
+                                                        <path d="M219.9 266.7L75.89 426.7c-5.906 6.562-16.03 7.094-22.59 1.188c-6.918-6.271-6.783-16.39-1.188-22.62L186.5 256L52.11 106.7C46.23 100.1 46.75 90.04 53.29 84.1C59.86 78.2 69.98 78.73 75.89 85.29l144 159.1C225.4 251.4 225.4 260.6 219.9 266.7z"></path>
+                                                    </svg>
+                                                </div>
+                                            </a>
+                                            <ul class="sub-menu">
+                                                <li class="back-button">
+                                                    <a href="#">
+                                                        <div class="icon">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
+                                                                <path d="M219.9 266.7L75.89 426.7c-5.906 6.562-16.03 7.094-22.59 1.188c-6.918-6.271-6.783-16.39-1.188-22.62L186.5 256L52.11 106.7C46.23 100.1 46.75 90.04 53.29 84.1C59.86 78.2 69.98 78.73 75.89 85.29l144 159.1C225.4 251.4 225.4 260.6 219.9 266.7z"></path>
+                                                            </svg>
+                                                        </div>
+                                                        Back
+                                                    </a>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <a href="index.html">Home 1</a>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <a href="index-2.html">Home 2</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="contact-us-page.html">Contact</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-            <!-- hamburger end -->
-          </div>
         </div>
-      </div>
     </header>
     <!-- Header-end -->
-
     <!-- Hero-Section-1 -->
     <section class="hero-section">
-      <!-- Swiper -->
-      <div class="swiper-hero hero-slider">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img class="hero-slide-bg tinted-image" src="inc/assets/images/hero-img-1.png" alt="Pup-A-Rama hero image" >
-            <div class="hero-text-box">
-              <h1 class="hero-heading">Welcome! to Pup-A-Rama!</h1>
-              <p class="description">
-                Your pup’s go-to play zone! Lively, social, and built for serious fun. All under one woof!
-              </p>
-              <div class="hero-btn">
-                <a
-                  href="#contact"
-                  class="btn btn--white wow animate__animated animate__pulse"
-                  data-wow-delay="1s"
-                  data-wow-duration="2s"
-                >Book Playhouse Now!</a>
-              </div>
+        <!-- Swiper -->
+        <div class="swiper-hero hero-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img class="hero-slide-bg tinted-image" src="inc/assets/images/hero-img-1.png" alt="pawfy">
+                    <div class="hero-text-box">
+                        <h1 class="hero-heading">Welcome! to Pup-A-Rama!</h1>
+                        <p class="description">
+                            Your pup's go-to play zone! Lively, social, and built for serious fun. All under one woof!</p>
+                        <div class="hero-btn">
+                            <a href="#contact" class="btn btn--white wow animate__animated animate__pulse" data-wow-delay="1s" data-wow-duration="2s">Book Playhouse Now!</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
+            <!-- Next-bttn -->
+            <svg class="swiper-hero-button-next" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <title>arrow-right</title>
+                <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z" />
+            </svg>
+            <!-- Prev-bttn -->
+            <svg class="swiper-hero-button-prev" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <title>arrow-left</title>
+                <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" />
+            </svg>
+            <!-- Pagination -->
+            <div class="swiper-hero-pagination"></div>
         </div>
-
-        <!-- Next-bttn -->
-        <svg class="swiper-hero-button-next" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
-          <title>arrow-right</title>
-          <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z" />
-        </svg>
-
-        <!-- Prev-bttn -->
-        <svg class="swiper-hero-button-prev" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
-          <title>arrow-left</title>
-          <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" />
-        </svg>
-
-        <!-- Pagination -->
-        <div class="swiper-hero-pagination"></div>
-      </div>
     </section>
     <!-- Hero-Section-1-end -->
-
     <!-- What we do section-start -->
     <section class="features-section">
-      <div class="container">
-        <div class="headings wow animate__animated animate__fadeIn">
-          <h1 class="primary-heading">
-            What we do<span class="orange-dot">.</span><br >
-            <span class="underline"></span>
-          </h1>
-          <p class="primary-discription">
-            Ready for playtime, training time, or just full-speed zoomies? Pup-A-Rama is your pup’s happy place.
-          </p>
-        </div>
-
-        <div class="custom-center">
-          <!-- NOTE: This used to be an <a> without href. Converted to <div> for valid HTML. -->
-          <div class="feature-block wow animate__animated custom-fadeInUp" data-wow-delay="0.25s">
-            <div class="img-block">
-              <img src="./inc/assets/images/Playhouse.png" alt="Playhouse" class="feature-img" >
+        <div class="container">
+            <div class="headings wow animate__animated animate__fadeIn">
+                <h1 class="primary-heading">
+                    What we do<span class="orange-dot">.</span><br>
+                    <span class="underline"></span>
+                </h1>
+                <p class="primary-discription">
+                    Ready for playtime, training time, or just full-speed zoomies? Pup-A-Rama is your pup's happy place.
+                </p>
             </div>
-
-            <div class="feature-text-box">
-              <h3 class="title">Playtime</h3>
-              <p class="feature-text">
-                Unleash the fun — tunnels, toys, and tail wags for every pup!
-              </p>
+            <div class="custom-center">
+                <div class="feature-block wow animate__animated custom-fadeInUp" data-wow-delay="0.25s">
+                    <div class="img-block">
+                        <img src="./inc/assets/images/Playhouse.png" alt="Dog-img" class="feature-img">
+                    </div>
+                    <div class="feature-text-box">
+                        <h3 class="title">Playtime</h3>
+                        <p class="feature-text">
+                            Unleach the fun - tunnels, toys, and tail wags for every pup!
+                        </p>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </section>
     <!-- What we do section-end -->
-
     <!-- About-us-section-start -->
     <section id="about" class="about-us-section wow animate__animated custom-fadeInUp">
-      <div class="about-img-block">
-        <div class="about-banner wow animate__animated fadeInLeftSmall">
-          <h4 class="banner-inner-text">Where every dog's day is a play day!</h4>
+        <div class="about-img-block">
+            <div class="about-banner wow animate__animated fadeInLeftSmall">
+                <h4 class="banner-inner-text">Where every dog's day is a play day!</h4>
+            </div>
         </div>
-      </div>
-
-      <div class="about-text-block">
-        <h1 class="primary-heading wow animate__animated animate__fadeIn">
-          About us.
-          <span class="underline"></span>
-        </h1>
-
-        <div class="about-us-comment wow animate__animated fadeInRightSmall">
-          <div class="comment">
-            Pup-A-Rama is a space for dogs of all sizes. Whether they need room to run
-            or a spot to work on training, we’ve got them covered.
-          </div>
-          <p class="about-name">— Holly</p>
+        <div class="about-text-block">
+            <h1 class="primary-heading wow animate__animated animate__fadeIn">
+                About us.
+                <span class="underline"></span>
+            </h1>
+            <div class="about-us-comment wow animate__animated fadeInRightSmall">
+                <div class="comment">
+                    Pup-A-Rama is a space for dogs of all sizes. Whether they need room to run or a spot to work on training, we've got them covered.
+                </div>
+                <p class="about-name">— Holly</p>
+            </div>
         </div>
-      </div>
     </section>
     <!-- About-us-section-end -->
-
     <!-- Services-Card-Section-Start -->
     <section class="services-section">
-      <div class="container">
-        <h1 class="primary-heading wow animate__animated animate__fadeIn">
-          Meet the Pack <span class="orange-dot">!</span><br >
-          <span class="underline"></span>
-        </h1>
-        <p class="primary-discription wow animate__animated animate__fadeIn">
-          We strive to give our pups the best care and activity they need while they are here!
-        </p>
-
-        <div class="services-card-section">
-          <a
-            class="service-card wow animate__animated custom-fadeInUp"
-            data-wow-delay="0s"
-            href="#contact"
-            aria-label="Contact Holly Arnold"
-          >
-            <div class="service-img-block">
-              <img src="./inc/assets/images/Hollyphoto.jpeg" alt="Holly Arnold" class="service-img" >
+        <div class="container">
+            <h1 class="primary-heading wow animate__animated animate__fadeIn">
+                Meet the Pack <span class="orange-dot">!</span><br>
+                <span class="underline"></span>
+            </h1>
+            <p class="primary-discription wow animate__animated animate__fadeIn">
+                We strive to give our pups the best care and activity they need while they are here!
+            </p>
+            <div class="services-card-section">
+                <div></div>
+                <div class="service-card wow animate__animated custom-fadeInUp" data-wow-delay="0s">
+                    <div class="service-img-block">
+                        <img src="./inc/assets/images/Hollyphoto.jpeg" alt="Dog-img" class="service-img">
+                    </div>
+                    <div class="service-content">
+                        <h3 class="title">Holly Arnold - Owner</h3>
+                        <p class="service-description">
+                            Holly is the owner of Pup-A-Rama and wants to give the pups who don't have space at home a place to run and jump around off leash.
+                        </p>
+                    </div>
+                </div>
+                <div></div>
             </div>
-
-            <div class="service-content">
-              <h3 class="title">Holly Arnold - Owner</h3>
-              <p class="service-description">
-                Holly is the owner of Pup-A-Rama and wants to give the pups who don't
-                have space at home a place to run and jump around off leash.
-              </p>
-            </div>
-          </a>
         </div>
-      </div>
     </section>
     <!-- Services-Card-Section-end -->
-
     <!-- Feedback-Section-start -->
     <section class="feedback-section">
-      <div class="container">
-        <div class="feedback--wrapper">
-          <h1 class="primary-heading wow animate__animated animate__fadeIn">
-            Where to Find Us<span class="orange-dot">!</span><br >
-            <span class="underline"></span>
-          </h1>
-
-          <p style="text-align: center;">
-            5 miles south of downtown Iowa City on South Gilbert Street. <br>
-            Be sure to drive around to the back building. <br>
-            Follow to Pup-A-Rama signs.
-          </p>
-
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d443.97722640305307!2d-91.50954991099456!3d41.57981919943196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87e41545123015e9%3A0xc0e3d09db91ed160!2s4852%20Sand%20Rd%20SE%2C%20Iowa%20City%2C%20IA%2052240!5e0!3m2!1sen!2sus!4v1747332614566!5m2!1sen!2sus"
-            width="800"
-            height="450"
-            style="
-              border: 10px solid white;
-              border-radius: 16px;
-              box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-              margin: 0 auto;
-              margin-top: 5em;
-              display: block;
-              max-width: 100%;
-            "
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            title="Pup-A-Rama Location Map"
-          ></iframe>
+        <div class="container">
+            <div class="feedback--wrapper">
+                <h1 class="primary-heading wow animate__animated animate__fadeIn">
+                    Where to Find Us<span class="orange-dot">!</span><br>
+                    <span class="underline"></span>
+                </h1>
+                <p style="text-align: center;">
+                    5 miles south of downtown Iowa City on South Gilbert Street. <br>
+                    Be sure to drive around to the back building. <br>
+                    Follow to Pup-A-Rama signs.
+                </p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d443.97722640305307!2d-91.50954991099456!3d41.57981919943196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87e41545123015e9%3A0xc0e3d09db91ed160!2s4852%20Sand%20Rd%20SE%2C%20Iowa%20City%2C%20IA%2052240!5e0!3m2!1sen!2sus!4v1747332614566!5m2!1sen!2sus" width="800" height="450" style="border: 10px solid white; border-radius: 16px; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3); margin: 0 auto; margin-top: 5em; display: block; max-width: 100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </div>
-      </div>
     </section>
     <!-- Feedback-Section-end -->
-
     <!-- Questionaire-section-start -->
     <section class="questionaire-section wow animate__animated animate__fadeIn">
-      <div class="container">
-        <div class="question-block">
-          <div class="question wow animate__animated fadeInLeftSmall">
-            <h1 id="contact" class="question-text">Contact Us!</h1>
-          </div>
-
-          <div class="question-btn" style="flex-direction: column;">
-            <div style="color: rgb(255, 255, 255); font-size: 3em; text-align: center;">
-              Playhouse - Holly Arnold
+        <div class="container">
+            <div class="question-block">
+                <div class="question wow animate__animated fadeInLeftSmall">
+                    <h1 id="contact" class="question-text">Contact Us!</h1>
+                </div>
+                <div class="question-btn" style="flex-direction:column">
+                    <a href="" style="color: rgb(255, 255, 255); font-size: 3em; text-align: center;">
+                        Playhouse - Holly Arnold</a>
+                    <a href="mailto:puparama123@aol.com" style="color: white; font-size: 2.5em; text-align: center;">
+                        Email - puparama123@aol.com</a>
+                    <a href="tel:(319) 936-1184" style="color: white; font-size: 2.5em; margin-bottom: 2em; text-align: center;">
+                        Phone - (319) 936-1184</a>
+                </div>
             </div>
-            <a
-              href="mailto:puparama123@aol.com"
-              style="color: white; font-size: 2.5em; text-align: center;"
-            >Email - puparama123@aol.com</a>
-
-            <!-- tel: should be digits only for best compatibility -->
-            <a
-              href="tel:+13199361184"
-              style="color: white; font-size: 2.5em; margin-bottom: 2em; text-align: center;"
-            >Phone - (319) 936-1184</a>
-          </div>
         </div>
-      </div>
     </section>
     <!-- Questionaire-section-end -->
-
     <!-- Footer-html-start -->
     <footer class="footer">
-      <div class="container">
-        <div class="footer-wrapper grid grid-4-col">
-          <!-- About-col -->
-          <div class="about-col">
-            <h4 class="sub-heading">About</h4>
-            <p class="footer-description">
-              Your pup's go-to play zone! Lively, social, and built for serious fun! All under one woof!
-            </p>
-            <ul class="footer-social-links">
-              <li>
-                <a
-                  href="https://www.facebook.com/people/Pup-A-Rama-Playhouse-Grooming/100073531511491/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="social-link"
-                  aria-label="Facebook"
-                >
-                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
-                    <title>facebook</title>
-                    <path
-                      d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96A10 10 0 0 0 22 12.06C22 6.53 17.5 2.04 12 2.04Z"
-                    />
-                  </svg>
-                </a>
-              </li>
-
-              <li>
-                <a
-                  href="https://www.twitter.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="social-link"
-                  aria-label="X (Twitter)"
-                >
-                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" aria-hidden="true">
-                    <path
-                      d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"
-                    />
-                  </svg>
-                </a>
-              </li>
-
-              <li><!-- Pinterest intentionally disabled --></li>
-              <li><!-- Instagram intentionally disabled --></li>
-            </ul>
-          </div>
-
-          <!-- (Optional) Add more footer columns here if your CSS expects 4 cols -->
-          <div></div>
-          <div></div>
-          <div></div>
+        <div class="container">
+            <div class="footer-wrapper grid grid-4-col">
+                <!-- About-col -->
+                <div class="about-col">
+                    <h4 class="sub-heading">About</h4>
+                    <p class="footer-description">
+                        Your pup's go-to play zone! Lively, social, and built for serious fun! All under one woof!
+                    </p>
+                    <ul class="footer-social-links">
+                        <li>
+                            <a href="https://www.facebook.com/people/Pup-A-Rama-Playhouse-Grooming/100073531511491/" target="_blank" class="social-link"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <title>facebook</title>
+                                    <path d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96A10 10 0 0 0 22 12.06C22 6.53 17.5 2.04 12 2.04Z" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/people/Pup-A-Rama-Playhouse-Grooming/100073531511491/" target="_blank" class="social-link">
+                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <p class="copyright">© GfxPartner</p>
         </div>
-      </div>
     </footer>
     <!-- Footer-html-end -->
-
-    <!-- Swiper JS (needed for hero slider) -->
+    <!-- ====== SCROLL TO TOP BUTTON ====== -->
+    <button class="scrollToTopBtn">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <title>arrow-up</title>
+            <path d="M13,20H11V8L5.5,13.5L4.08,12.08L12,4.16L19.92,12.08L18.5,13.5L13,8V20Z" />
+        </svg>
+    </button>
+    <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <!-- Init scripts (safe even if app.js also initializes; remove if you already do this in app.js) -->
     <script>
-      // WOW init
-      if (typeof WOW === "function") {
+        // Initialize WOW.js
         new WOW().init();
-      }
-
-      // Swiper init (hero)
-      if (typeof Swiper === "function") {
-        new Swiper(".swiper-hero", {
-          loop: true,
-          navigation: {
-            nextEl: ".swiper-hero-button-next",
-            prevEl: ".swiper-hero-button-prev"
-          },
-          pagination: {
-            el: ".swiper-hero-pagination",
-            clickable: true
-          }
-        });
-      }
     </script>
-  </body>
+</body>
 </html>
