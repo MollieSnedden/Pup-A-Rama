@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <title>Pup-A-Rama</title>
 
+    <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="inc/assets/images/apple-touch-icon.png" >
     <link rel="icon" type="image/png" sizes="32x32" href="inc/assets/images/favicon-32x32.png" >
     <link rel="icon" type="image/png" sizes="16x16" href="inc/assets/images/favicon-16x16.png" >
@@ -13,13 +14,16 @@
     <link rel="stylesheet" href="inc/assets/dist/style.css" >
     <!-- stylesheets - end -->
 
-    <!-- Link Swiper's CSS -->
+    <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" >
 
-    <!-- Load Animate.css from CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" >
+    <!-- Animate.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    >
 
-    <!-- Load WOW.js from CDN -->
+    <!-- WOW.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 
     <!-- deferred scripts - start -->
@@ -38,9 +42,11 @@
               <a
                 href="https://www.facebook.com/people/Pup-A-Rama-Playhouse-Grooming/100073531511491/"
                 target="_blank"
+                rel="noopener noreferrer"
                 class="social-link"
+                aria-label="Facebook"
               >
-                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-hidden="true">
                   <title>facebook</title>
                   <path
                     d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96A10 10 0 0 0 22 12.06C22 6.53 17.5 2.04 12 2.04Z"
@@ -48,17 +54,25 @@
                 </svg>
               </a>
             </li>
+
             <li>
-              <a href="https://www.twitter.com" target="_blank" class="social-link">
-                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <a
+                href="https://www.twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-link"
+                aria-label="X (Twitter)"
+              >
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-hidden="true">
                   <path
                     d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"
                   />
                 </svg>
               </a>
             </li>
-            <li><!-- pinterest disabled --></li>
-            <li><!-- instagram disabled --></li>
+
+            <li><!-- Pinterest intentionally disabled --></li>
+            <li><!-- Instagram intentionally disabled --></li>
           </ul>
         </div>
       </div>
@@ -100,8 +114,8 @@
                     <a href="index.html" class="logo">
                       <img src="inc/assets/images/logo-light.png" alt="pawfy" >
                     </a>
-                    <div class="hamburger-close">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <div class="hamburger-close" role="button" tabindex="0" aria-label="Close menu">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
                         <title>window-close</title>
                         <path
                           d="M13.46,12L19,17.54V19H17.54L12,13.46L6.46,19H5V17.54L10.54,12L5,6.46V5H6.46L12,10.54L17.54,5H19V6.46L13.46,12Z"
@@ -116,7 +130,7 @@
                         <a href="index.html">Home</a>
                       </li>
                       <li class="menu-item">
-                        <a href="#about">About Us</a>
+                        <a href="#about">About</a>
                       </li>
                       <li class="menu-item">
                         <a href="#contact">Contact</a>
@@ -124,10 +138,9 @@
                     </ul>
                   </div>
                 </div>
-                <!-- /hamburger-content -->
               </div>
             </div>
-            <!-- /hamburger -->
+            <!-- hamburger end -->
           </div>
         </div>
       </div>
@@ -136,10 +149,11 @@
 
     <!-- Hero-Section-1 -->
     <section class="hero-section">
+      <!-- Swiper -->
       <div class="swiper-hero hero-slider">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <img class="hero-slide-bg tinted-image" src="inc/assets/images/hero-img-1.png" alt="pawfy" >
+            <img class="hero-slide-bg tinted-image" src="inc/assets/images/hero-img-1.png" alt="Pup-A-Rama hero image" >
             <div class="hero-text-box">
               <h1 class="hero-heading">Welcome! to Pup-A-Rama!</h1>
               <p class="description">
@@ -158,17 +172,18 @@
         </div>
 
         <!-- Next-bttn -->
-        <svg class="swiper-hero-button-next" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <svg class="swiper-hero-button-next" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
           <title>arrow-right</title>
           <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z" />
         </svg>
 
         <!-- Prev-bttn -->
-        <svg class="swiper-hero-button-prev" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <svg class="swiper-hero-button-prev" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
           <title>arrow-left</title>
           <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" />
         </svg>
 
+        <!-- Pagination -->
         <div class="swiper-hero-pagination"></div>
       </div>
     </section>
@@ -188,16 +203,19 @@
         </div>
 
         <div class="custom-center">
-          <a class="feature-block wow animate__animated custom-fadeInUp" data-wow-delay="0.25s">
+          <!-- NOTE: This used to be an <a> without href. Converted to <div> for valid HTML. -->
+          <div class="feature-block wow animate__animated custom-fadeInUp" data-wow-delay="0.25s">
             <div class="img-block">
-              <img src="./inc/assets/images/Playhouse.png" alt="Dog-img" class="feature-img" >
+              <img src="./inc/assets/images/Playhouse.png" alt="Playhouse" class="feature-img" >
             </div>
 
             <div class="feature-text-box">
               <h3 class="title">Playtime</h3>
-              <p class="feature-text">Unleach the fun - tunnels, toys, and tail wags for every pup!</p>
+              <p class="feature-text">
+                Unleash the fun — tunnels, toys, and tail wags for every pup!
+              </p>
             </div>
-          </a>
+          </div>
         </div>
       </div>
     </section>
@@ -235,13 +253,17 @@
           Meet the Pack <span class="orange-dot">!</span><br >
           <span class="underline"></span>
         </h1>
-
         <p class="primary-discription wow animate__animated animate__fadeIn">
           We strive to give our pups the best care and activity they need while they are here!
         </p>
 
         <div class="services-card-section">
-          <a class="service-card wow animate__animated custom-fadeInUp" data-wow-delay="0s">
+          <a
+            class="service-card wow animate__animated custom-fadeInUp"
+            data-wow-delay="0s"
+            href="#contact"
+            aria-label="Contact Holly Arnold"
+          >
             <div class="service-img-block">
               <img src="./inc/assets/images/Hollyphoto.jpeg" alt="Holly Arnold" class="service-img" >
             </div>
@@ -290,6 +312,7 @@
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
+            title="Pup-A-Rama Location Map"
           ></iframe>
         </div>
       </div>
@@ -304,16 +327,20 @@
             <h1 id="contact" class="question-text">Contact Us!</h1>
           </div>
 
-          <div class="question-btn" style="flex-direction:column">
-            <a href="" style="color: rgb(255, 255, 255); font-size: 3em; text-align: center;">
+          <div class="question-btn" style="flex-direction: column;">
+            <div style="color: rgb(255, 255, 255); font-size: 3em; text-align: center;">
               Playhouse - Holly Arnold
-            </a>
-            <a href="mailto:puparama123@aol.com" style="color: white; font-size: 2.5em; text-align: center;">
-              Email - puparama123@aol.com
-            </a>
-            <a href="tel:(319) 936-1184" style="color: white; font-size: 2.5em; margin-bottom: 2em; text-align: center;">
-              Phone - (319) 936-1184
-            </a>
+            </div>
+            <a
+              href="mailto:puparama123@aol.com"
+              style="color: white; font-size: 2.5em; text-align: center;"
+            >Email - puparama123@aol.com</a>
+
+            <!-- tel: should be digits only for best compatibility -->
+            <a
+              href="tel:+13199361184"
+              style="color: white; font-size: 2.5em; margin-bottom: 2em; text-align: center;"
+            >Phone - (319) 936-1184</a>
           </div>
         </div>
       </div>
@@ -324,20 +351,22 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-wrapper grid grid-4-col">
+          <!-- About-col -->
           <div class="about-col">
             <h4 class="sub-heading">About</h4>
             <p class="footer-description">
               Your pup's go-to play zone! Lively, social, and built for serious fun! All under one woof!
             </p>
-
             <ul class="footer-social-links">
               <li>
                 <a
                   href="https://www.facebook.com/people/Pup-A-Rama-Playhouse-Grooming/100073531511491/"
                   target="_blank"
+                  rel="noopener noreferrer"
                   class="social-link"
+                  aria-label="Facebook"
                 >
-                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
                     <title>facebook</title>
                     <path
                       d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96A10 10 0 0 0 22 12.06C22 6.53 17.5 2.04 12 2.04Z"
@@ -348,11 +377,13 @@
 
               <li>
                 <a
-                  href="https://www.facebook.com/people/Pup-A-Rama-Playhouse-Grooming/100073531511491/"
+                  href="https://www.twitter.com"
                   target="_blank"
+                  rel="noopener noreferrer"
                   class="social-link"
+                  aria-label="X (Twitter)"
                 >
-                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" aria-hidden="true">
                     <path
                       d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"
                     />
@@ -360,13 +391,44 @@
                 </a>
               </li>
 
-              <li><!-- pinterest disabled --></li>
-              <li><!-- instagram disabled --></li>
+              <li><!-- Pinterest intentionally disabled --></li>
+              <li><!-- Instagram intentionally disabled --></li>
             </ul>
           </div>
+
+          <!-- (Optional) Add more footer columns here if your CSS expects 4 cols -->
+          <div></div>
+          <div></div>
+          <div></div>
         </div>
       </div>
     </footer>
     <!-- Footer-html-end -->
+
+    <!-- Swiper JS (needed for hero slider) -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Init scripts (safe even if app.js also initializes; remove if you already do this in app.js) -->
+    <script>
+      // WOW init
+      if (typeof WOW === "function") {
+        new WOW().init();
+      }
+
+      // Swiper init (hero)
+      if (typeof Swiper === "function") {
+        new Swiper(".swiper-hero", {
+          loop: true,
+          navigation: {
+            nextEl: ".swiper-hero-button-next",
+            prevEl: ".swiper-hero-button-prev"
+          },
+          pagination: {
+            el: ".swiper-hero-pagination",
+            clickable: true
+          }
+        });
+      }
+    </script>
   </body>
 </html>
